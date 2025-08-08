@@ -1,0 +1,11 @@
+
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#000f55">
+    <!-- Letra M -->
+    <path d="M20 150 L20 50 L60 100 L100 50 L100 150 L85 150 L85 85 L60 115 L35 85 L35 150 Z"/>
+    <!-- Barra de pesos -->
+    <rect x="20" y="160" width="10" height="20"/>
+    <rect x="30" y="165" width="40" height="10"/>
+    <rect x="70" y="160" width="10" height="20"/>
+  </g>
+</svg>

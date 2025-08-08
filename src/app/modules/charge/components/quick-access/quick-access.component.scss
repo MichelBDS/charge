@@ -1,0 +1,40 @@
+:host{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 40px;
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    h2{
+
+    }
+
+    a{
+      flex: 20%;
+      width: 320px;
+      height: 160px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media(max-width: 750px){
+    section{
+      a{
+        flex: 100%;
+        height: 140px;
+      }
+    }
+  }
+
+}
