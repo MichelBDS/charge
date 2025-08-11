@@ -1,6 +1,8 @@
-<section>
+<div class="container">
   <h2>Bem Vindo {{userName()}}</h2>
-</section>
-<section>
-  @for (item of arrayQuickAccess(); track item) {<a [href]="item.href">{{item.name}}</a>}
-</section>
+  <ul>
+    @for (item of arrayQuickAccess(); track item) {
+    <li><a [href]="item.href">{{item.name}}</a></li>
+    }
+  </ul>
+</div>
