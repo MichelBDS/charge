@@ -7,13 +7,14 @@
     width: 100%;
 
     background: var(--white);
-    box-shadow: 0px 0px 10px var(--gray-020);
+    box-shadow: 1px 1px 1px 1px var(--gray-020);
   }
 
   nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 50px;
 
     height: 90px;
 

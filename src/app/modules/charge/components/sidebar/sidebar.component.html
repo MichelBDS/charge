@@ -1,0 +1,12 @@
+<nav [class.collapsed]="isCollapsed" class="sidebar">
+  <div class="sidebar-header">
+    <button class="toggle-btn" (click)="toggleSidebar()"> ☰ </button>
+  </div>
+  @if (!isCollapsed) {
+  <ul>
+    <li><a href="#">🏠<span>Início</span></a></li>
+    <li><a href="#">📂<span>Mensalidades</span></a></li>
+    <li><a href="#">⚙️<span>Configurações</span></a></li>
+  </ul>
+  }
+</nav>
