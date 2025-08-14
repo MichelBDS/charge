@@ -10,8 +10,13 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
   isCollapsed = false;
+  activeDropdown: string | null = null;
 
   toggleSidebar() {
     this.isCollapsed = !this.isCollapsed;
+  }
+
+  toggleDropdown(menu: string){
+    this.activeDropdown = this.activeDropdown === menu ? null : menu;
   }
 }

@@ -5,7 +5,22 @@
   @if (!isCollapsed) {
   <ul>
     <li><a href="#">🏠<span>Início</span></a></li>
-    <li><a href="#">📂<span>Mensalidades</span></a></li>
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" (click)="toggleDropdown('Mensalidades')">
+        📂@if(!isCollapsed){<span>Mensalidades</span>}
+        <span class="arrow" *ngIf="!isCollapsed">
+          {{ activeDropdown === 'Mensalidades' ? '▲' : '▼' }}
+        </span>
+      </a>
+      @if(activeDropdown === 'Mensalidades' && !isCollapsed){
+      <ul class="submenu">
+        <li><a href="#">➕ Gerar Mensalidades</a></li>
+        <li><a href="#">📋  Mensalidades</a></li>
+      </ul>
+      }
+    </li>
+
     <li><a href="#">⚙️<span>Configurações</span></a></li>
   </ul>
   }

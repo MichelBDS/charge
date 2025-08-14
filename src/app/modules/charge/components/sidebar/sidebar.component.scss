@@ -47,3 +47,30 @@
 .sidebar li:hover {
   background: var(--secondary);
 }
+
+.arrow {
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+.submenu {
+  list-style: none;
+  padding-top: 5px !important;
+}
+
+.submenu li{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.submenu li a {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.submenu li:hover{
+  background-color: var(--primary);
+  border-radius: 7px;
+}
